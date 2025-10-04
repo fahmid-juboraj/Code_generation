@@ -16,9 +16,9 @@ def merge_json_responses(submission_json_path, sub_406_json_path, output_json_pa
         json.dump(submission_data, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    submission_json_path = 'submission3.json'
-    sub_406_json_path = '/content/sub_406.json'
-    output_json_path = 'merged_submission2.json'
+    submission_json_path = 'submission.json'
+    sub_406_json_path = '/content/corrected_from_error.json'
+    output_json_path = 'merged_submission.json'
     target_ids = [ ] #put the target ids for merging with the passed test cases
 
     merge_json_responses(submission_json_path, sub_406_json_path, output_json_path, target_ids)
